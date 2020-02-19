@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript">
+let id = {
+    "p1": "value1",
+    "p2": "value2",
+    "p3": "value3"
+};let name = {
+    "p1": "value1",
+    "p2": "value2",
+    "p3": "value3"
+};
+Object.keys(id,name).forEach((key,index) => {
+  console.log(key,id[key],name[key])
+});
+Object.keys(name).forEach((key,index) => {
+  console.log(name[key])
+});
+console.log(Object.entries(id));
+console.log(Object.values(id));
+console.log(Object.keys(id));
+let recipeMap = new Map([
+  ['cucumber', 500],
+  ['tomatoes', 350],
+  ['onion',    50]
+]);
+
+// iterate over [key, value] entries
+for (let entry of recipeMap) { // the same as of recipeMap.entries()
+  console.log(entry); // cucumber,500 (and so on)
+}
+</script>
+</head>
+<body>
+<h1>hdh</h1>
+</body>
+</html>
